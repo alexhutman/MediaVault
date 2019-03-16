@@ -8,21 +8,66 @@
 
 import UIKit
 import CoreData
+import SQLite
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("RECEIVED DB FILE IN \(url.path)")
+        do {
+            let defaultDir = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let metadataDbURL = defaultDir.appendingPathComponent("metadata").appendingPathExtension("db")
+            let dbName = url.lastPathComponent.components(separatedBy: ".")[0]
+            let dbURL = defaultDir.appendingPathComponent("userDBs").appendingPathComponent(dbName).appendingPathExtension("db")
+            print("DB NAME: \(dbName)")
+            
+            try FileManager.default.copyItem(at: url, to: dbURL)
+            try FileManager.default.removeItem(at: url)
+            
+            let metadataTable = Table("metadata")
+            let metadataID = Expression<String>("id")
+            let metadataLastTime = Expression<String>("lastTime")
+            let metadataLastLoc = Expression<String>("lastLoc")
+            
+            let metadataDB = try Connection(metadataDbURL.path)
+            let insertDBNameToMetadataDB = metadataTable.insert(metadataID <- dbName, metadataLastLoc <- "-", metadataLastTime <- "-")
+            try metadataDB.run(insertDBNameToMetadataDB)
+            let homePageVC = self.window?.rootViewController?.childViewControllers[0] as! HomePageViewController
+            homePageVC.handleOpenURL()
+            
+            return true
+        } catch {
+            //TODO: ALERT, COULDNT OPEN FILE
+            print(error)
+            return false
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = UIColor.black
+        navigationBarAppearance.tintColor = UIColor.white
+        navigationBarAppearance.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark) //This code was from https://stackoverflow.com/questions/31982270/blurring-app-screen-in-switch-mode-on-ios
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = window!.frame
+        blurEffectView.tag = 221122
+        
+        self.window?.addSubview(blurEffectView)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -36,6 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        self.window?.viewWithTag(221122)?.removeFromSuperview()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

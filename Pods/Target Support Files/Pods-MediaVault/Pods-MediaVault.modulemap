@@ -1,0 +1,6 @@
+framework module Pods_MediaVault {
+  umbrella header "Pods-MediaVault-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368C583420915FF30018AE2E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C583320915FF30018AE2E /* SettingsController.swift */; };
+		36DF0F8120881E2B00CDB2FB /* NewDBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF0F8020881E2B00CDB2FB /* NewDBController.swift */; };
+		F234FE541D1EFB80D7B06965 /* Pods_MediaVault.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1DE368F1EDED0402F9803F /* Pods_MediaVault.framework */; };
+		FA3D7C9E20A10D5700B76F39 /* ViewImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D7C9D20A10D5700B76F39 /* ViewImageController.swift */; };
+		FA3D7CA020A10D7800B76F39 /* ViewEditTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D7C9F20A10D7800B76F39 /* ViewEditTextController.swift */; };
+		FA3D7CA220A1337000B76F39 /* BlobExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D7CA120A1337000B76F39 /* BlobExtensions.swift */; };
+		FA3D7CA620A142B000B76F39 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D7CA520A142B000B76F39 /* HelpViewController.swift */; };
+		FA980C3D209FB5CA00522828 /* AddTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA980C3C209FB5CA00522828 /* AddTextViewController.swift */; };
+		FA9DE24920A357900031F0F0 /* databaseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9DE24820A3578F0031F0F0 /* databaseIcon.png */; };
+		FA9DE24B20A372A30031F0F0 /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DE24A20A372A30031F0F0 /* AboutPageViewController.swift */; };
+		FA9DE24D20A379D80031F0F0 /* ImportExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DE24C20A379D80031F0F0 /* ImportExportViewController.swift */; };
+		FA9DE24F20A37FB00031F0F0 /* GitHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DE24E20A37FB00031F0F0 /* GitHubViewController.swift */; };
+		FAD7EDEE209E63C60086F7A0 /* ViewDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7EDED209E63C60086F7A0 /* ViewDBViewController.swift */; };
+		FAD7EDF4209EA23D0086F7A0 /* EnterPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7EDF3209EA23D0086F7A0 /* EnterPassViewController.swift */; };
 		FAFCFA8720472AA300496B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCFA8620472AA300496B55 /* AppDelegate.swift */; };
-		FAFCFA8920472AA300496B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCFA8820472AA300496B55 /* ViewController.swift */; };
 		FAFCFA8C20472AA300496B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFCFA8A20472AA300496B55 /* Main.storyboard */; };
 		FAFCFA8F20472AA300496B55 /* MediaVault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAFCFA8D20472AA300496B55 /* MediaVault.xcdatamodeld */; };
 		FAFCFA9120472AA300496B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFCFA9020472AA300496B55 /* Assets.xcassets */; };
 		FAFCFA9420472AA300496B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFCFA9220472AA300496B55 /* LaunchScreen.storyboard */; };
+		FAFCFAA4204754F900496B55 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCFAA3204754F900496B55 /* HomePageViewController.swift */; };
+		FAFCFAA72047593800496B55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFCFAA62047593800496B55 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09072B8E2ABB4FEAD026D41D /* Pods-MediaVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaVault.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaVault/Pods-MediaVault.debug.xcconfig"; sourceTree = "<group>"; };
+		1AF4DCFC088F35907281E60F /* Pods-MediaVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaVault.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaVault/Pods-MediaVault.release.xcconfig"; sourceTree = "<group>"; };
+		368C583320915FF30018AE2E /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		36DF0F8020881E2B00CDB2FB /* NewDBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDBController.swift; sourceTree = "<group>"; };
+		DD1DE368F1EDED0402F9803F /* Pods_MediaVault.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaVault.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3D7C9D20A10D5700B76F39 /* ViewImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImageController.swift; sourceTree = "<group>"; };
+		FA3D7C9F20A10D7800B76F39 /* ViewEditTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEditTextController.swift; sourceTree = "<group>"; };
+		FA3D7CA120A1337000B76F39 /* BlobExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobExtensions.swift; sourceTree = "<group>"; };
+		FA3D7CA520A142B000B76F39 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		FA980C3C209FB5CA00522828 /* AddTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextViewController.swift; sourceTree = "<group>"; };
+		FA9DE24820A3578F0031F0F0 /* databaseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = databaseIcon.png; path = "../MediaVault assets/databaseIcon.png"; sourceTree = "<group>"; };
+		FA9DE24A20A372A30031F0F0 /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
+		FA9DE24C20A379D80031F0F0 /* ImportExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportViewController.swift; sourceTree = "<group>"; };
+		FA9DE24E20A37FB00031F0F0 /* GitHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewController.swift; sourceTree = "<group>"; };
+		FAD7EDED209E63C60086F7A0 /* ViewDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDBViewController.swift; sourceTree = "<group>"; };
+		FAD7EDF3209EA23D0086F7A0 /* EnterPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPassViewController.swift; sourceTree = "<group>"; };
 		FAFCFA8320472AA300496B55 /* MediaVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFCFA8620472AA300496B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAFCFA8820472AA300496B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAFCFA8B20472AA300496B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFCFA8E20472AA300496B55 /* MediaVault.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediaVault.xcdatamodel; sourceTree = "<group>"; };
 		FAFCFA9020472AA300496B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFCFA9320472AA300496B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFCFA9520472AA300496B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFCFAA3204754F900496B55 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		FAFCFAA62047593800496B55 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFCFAA72047593800496B55 /* MapKit.framework in Frameworks */,
+				F234FE541D1EFB80D7B06965 /* Pods_MediaVault.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B55B240044184F6EFFFFB51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09072B8E2ABB4FEAD026D41D /* Pods-MediaVault.debug.xcconfig */,
+				1AF4DCFC088F35907281E60F /* Pods-MediaVault.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAFCFA7A20472AA300496B55 = {
 			isa = PBXGroup;
 			children = (
+				FA9DE24820A3578F0031F0F0 /* databaseIcon.png */,
 				FAFCFA8520472AA300496B55 /* MediaVault */,
 				FAFCFA8420472AA300496B55 /* Products */,
+				FAFCFAA52047593800496B55 /* Frameworks */,
+				4B55B240044184F6EFFFFB51 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +102,60 @@
 		FAFCFA8520472AA300496B55 /* MediaVault */ = {
 			isa = PBXGroup;
 			children = (
+				FAFCFA9E20472B1700496B55 /* Controller */,
+				FAFCFA9C20472B0900496B55 /* Model */,
+				FAFCFA9B20472B0100496B55 /* View */,
 				FAFCFA8620472AA300496B55 /* AppDelegate.swift */,
-				FAFCFA8820472AA300496B55 /* ViewController.swift */,
-				FAFCFA8A20472AA300496B55 /* Main.storyboard */,
 				FAFCFA9020472AA300496B55 /* Assets.xcassets */,
-				FAFCFA9220472AA300496B55 /* LaunchScreen.storyboard */,
 				FAFCFA9520472AA300496B55 /* Info.plist */,
 				FAFCFA8D20472AA300496B55 /* MediaVault.xcdatamodeld */,
 			);
 			path = MediaVault;
+			sourceTree = "<group>";
+		};
+		FAFCFA9B20472B0100496B55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCFA9220472AA300496B55 /* LaunchScreen.storyboard */,
+				FAFCFA8A20472AA300496B55 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAFCFA9C20472B0900496B55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFCFA9E20472B1700496B55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCFAA3204754F900496B55 /* HomePageViewController.swift */,
+				36DF0F8020881E2B00CDB2FB /* NewDBController.swift */,
+				368C583320915FF30018AE2E /* SettingsController.swift */,
+				FAD7EDED209E63C60086F7A0 /* ViewDBViewController.swift */,
+				FAD7EDF3209EA23D0086F7A0 /* EnterPassViewController.swift */,
+				FA980C3C209FB5CA00522828 /* AddTextViewController.swift */,
+				FA3D7C9D20A10D5700B76F39 /* ViewImageController.swift */,
+				FA3D7C9F20A10D7800B76F39 /* ViewEditTextController.swift */,
+				FA3D7CA120A1337000B76F39 /* BlobExtensions.swift */,
+				FA3D7CA520A142B000B76F39 /* HelpViewController.swift */,
+				FA9DE24A20A372A30031F0F0 /* AboutPageViewController.swift */,
+				FA9DE24C20A379D80031F0F0 /* ImportExportViewController.swift */,
+				FA9DE24E20A37FB00031F0F0 /* GitHubViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAFCFAA52047593800496B55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCFAA62047593800496B55 /* MapKit.framework */,
+				DD1DE368F1EDED0402F9803F /* Pods_MediaVault.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFCFA9820472AA300496B55 /* Build configuration list for PBXNativeTarget "MediaVault" */;
 			buildPhases = (
+				6B702BB094F06E90F1A56CA3 /* [CP] Check Pods Manifest.lock */,
 				FAFCFA7F20472AA300496B55 /* Sources */,
 				FAFCFA8020472AA300496B55 /* Frameworks */,
 				FAFCFA8120472AA300496B55 /* Resources */,
+				5C9F63213BD7B8260F685B88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -100,6 +193,11 @@
 					FAFCFA8220472AA300496B55 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,18 +227,74 @@
 				FAFCFA9420472AA300496B55 /* LaunchScreen.storyboard in Resources */,
 				FAFCFA9120472AA300496B55 /* Assets.xcassets in Resources */,
 				FAFCFA8C20472AA300496B55 /* Main.storyboard in Resources */,
+				FA9DE24920A357900031F0F0 /* databaseIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C9F63213BD7B8260F685B88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MediaVault/Pods-MediaVault-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaVault/Pods-MediaVault-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B702BB094F06E90F1A56CA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaVault-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAFCFA7F20472AA300496B55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFCFA8920472AA300496B55 /* ViewController.swift in Sources */,
+				36DF0F8120881E2B00CDB2FB /* NewDBController.swift in Sources */,
+				FA3D7CA020A10D7800B76F39 /* ViewEditTextController.swift in Sources */,
 				FAFCFA8F20472AA300496B55 /* MediaVault.xcdatamodeld in Sources */,
+				FA9DE24F20A37FB00031F0F0 /* GitHubViewController.swift in Sources */,
+				FA3D7CA220A1337000B76F39 /* BlobExtensions.swift in Sources */,
+				368C583420915FF30018AE2E /* SettingsController.swift in Sources */,
+				FA9DE24B20A372A30031F0F0 /* AboutPageViewController.swift in Sources */,
+				FA3D7C9E20A10D5700B76F39 /* ViewImageController.swift in Sources */,
+				FA980C3D209FB5CA00522828 /* AddTextViewController.swift in Sources */,
+				FA3D7CA620A142B000B76F39 /* HelpViewController.swift in Sources */,
+				FAFCFAA4204754F900496B55 /* HomePageViewController.swift in Sources */,
+				FAD7EDF4209EA23D0086F7A0 /* EnterPassViewController.swift in Sources */,
+				FAD7EDEE209E63C60086F7A0 /* ViewDBViewController.swift in Sources */,
+				FA9DE24D20A379D80031F0F0 /* ImportExportViewController.swift in Sources */,
 				FAFCFA8720472AA300496B55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,29 +430,37 @@
 		};
 		FAFCFA9920472AA300496B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09072B8E2ABB4FEAD026D41D /* Pods-MediaVault.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7XQV26DST;
 				INFOPLIST_FILE = MediaVault/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torsion.MediaVault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=*]" = "arm64 armv7 armv7s arm64e";
 			};
 			name = Debug;
 		};
 		FAFCFA9A20472AA300496B55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF4DCFC088F35907281E60F /* Pods-MediaVault.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7XQV26DST;
 				INFOPLIST_FILE = MediaVault/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torsion.MediaVault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=*]" = "arm64 armv7 armv7s arm64e";
 			};
 			name = Release;
 		};
